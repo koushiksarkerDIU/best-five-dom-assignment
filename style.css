@@ -9,3 +9,7 @@ li {
 #final-players-name {
     list-style-type: none;
 }
+
+.heading {
+    font-family: 'Berkshire Swash', cursive;
+}
