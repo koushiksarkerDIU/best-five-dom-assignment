@@ -5,3 +5,11 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     document.getElementById('player-expensive').innerText = cost;
 })
 
+document.getElementById('btn-calculate-total').addEventListener('click', function () {
+    const playerExpensive = getValueByInnerText('player-expensive')
+    const managerCost = getValueByInputField('manager-cost');
+    const coachCost = getValueByInputField('coach-cost');
+
+    const totalCost = playerExpensive + managerCost + coachCost;
+    document.getElementById('total-cost').innerText = totalCost;
+})

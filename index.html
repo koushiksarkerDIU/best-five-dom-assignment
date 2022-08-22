@@ -162,7 +162,7 @@
                         <div class="dark mb-4 p-4">
                             <h3 class="text-white py-2">Selected Players <span id="total-added-players">0</span></h3>
                             <div class="text-secondary h5">
-                                <ul id="final-players-name" type="I">
+                                <ul id="final-players-name">
 
                                 </ul>
                             </div>
@@ -190,22 +190,25 @@
                                     <div
                                         class="inline text-secondary d-flex justify-content-around align-items-start py-2">
                                         <p class="fw-semibold">Manager</p>
-                                        <input class="w-50 bg-dark text-white border border-1 border-white py-1"
+                                        <input id="manager-cost"
+                                            class="w-50 bg-dark text-white border border-1 border-white py-1"
                                             type="text">
                                     </div>
                                     <div
                                         class="inline text-secondary d-flex justify-content-around align-items-start py-2">
-                                        <p class="fw-semibold">Coatch </p>
-                                        <input class="w-50 bg-dark text-white border border-1 border-white py-1"
+                                        <p class="fw-semibold">Coach </p>
+                                        <input id="coach-cost"
+                                            class="w-50 bg-dark text-white border border-1 border-white py-1"
                                             type="text">
                                     </div>
                                     <div class="py-2">
-                                        <button class="text-white bg-danger px-4 py-2 mx-5 fw-bold">Calculate
+                                        <button id="btn-calculate-total"
+                                            class="text-white bg-danger px-4 py-2 mx-5 fw-bold">Calculate
                                             Total</button>
                                     </div>
                                     <div class="py-2">
                                         <p class="text-white text-center fw-semibold">Total <span
-                                                class="text-danger">$<span></span>1000</span>
+                                                class="text-danger">$<span id="total-cost">0</span></span>
                                         </p>
                                     </div>
                                 </div>
