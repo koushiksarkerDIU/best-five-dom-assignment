@@ -1,10 +1,9 @@
 const playerArray = [];
 function display(cartPlayer) {
-    const playerList = document.getElementById('finalPlayersName');
+    const playerList = document.getElementById('final-players-name');
     playerList.innerHTML = '';
 
     for (let i = 0; i < cartPlayer.length; i++) {
-        // console.log(cartPlayer[i]);
         const li = document.createElement('li');
         li.innerHTML = `<li>${i + 1}. ${cartPlayer[i]}</li>`;
         playerList.appendChild(li)

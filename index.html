@@ -162,7 +162,7 @@
                         <div class="dark mb-4 p-4">
                             <h3 class="text-white py-2">Selected Players <span id="total-added-players">0</span></h3>
                             <div class="text-secondary h5">
-                                <ul id="finalPlayersName" type="I">
+                                <ul id="final-players-name" type="I">
 
                                 </ul>
                             </div>
@@ -174,8 +174,8 @@
                             <div>
                                 <div class="inline text-secondary d-flex justify-content-around align-items-start py-2">
                                     <p class="fw-semibold">Per Player</p>
-                                    <input class="w-50 bg-dark text-white border border-1 border-white py-1"
-                                        type="text">
+                                    <input id="per-player-cost"
+                                        class="w-50 bg-dark text-white border border-1 border-white py-1" type="text">
                                 </div>
                                 <div class="py-2">
                                     <button id="btn-calculate"
@@ -183,7 +183,7 @@
                                 </div>
                                 <div class="py-2">
                                     <p class="text-secondary text-center fw-semibold">Player Expensive <span
-                                            class="text-white">$<span>100</span></span>
+                                            class="text-white">$<span id="player-expensive">0</span></span>
                                     </p>
                                 </div>
                                 <div>
@@ -219,6 +219,7 @@
         <hr class="bg-white">
         <p class="text-white text-center py-4 fw-semibold">Copyright @ 2022 All Rights Reserved</p>
     </footer>
+    <script src="js/common.js"></script>
     <script src="js/selected.js"></script>
     <script src="js/calculate.js"></script>
 </body>
