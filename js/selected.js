@@ -12,9 +12,9 @@ function display(cartPlayer) {
 }
 
 function addToCart(element) {
-    element.disabled = true;
     const playerName = element.parentNode.children[0].innerText;
     if (playerArray.length <= 4) {
+        element.disabled = true;
         playerArray.push(playerName);
         document.getElementById('total-added-players').innerText = playerArray.length;
         display(playerArray);
