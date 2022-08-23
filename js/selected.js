@@ -14,8 +14,13 @@ function display(cartPlayer) {
 function addToCart(element) {
     element.disabled = true;
     const playerName = element.parentNode.children[0].innerText;
-    playerArray.push(playerName);
-    document.getElementById('total-added-players').innerText = playerArray.length;
-    display(playerArray);
+    if (playerArray.length <= 4) {
+        playerArray.push(playerName);
+        document.getElementById('total-added-players').innerText = playerArray.length;
+        display(playerArray);
+    }
+    else {
+        return alert('You Can only add maxium 5 playes')
+    }
 
 }
